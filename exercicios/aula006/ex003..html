@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Salvando dados</title>
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background:#000;
+        }
+        h1{
+            font-size:3em;
+            color:#6f6fd6;
+            text-shadow:1px 1px 1px #fff;
+        }
+        p{
+            color:#6f6fd6;
+        }
+        /* comentando */
+   </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- só escrevendo um comentário-->
+    <p>Já Me livrei da maldição </p>
+    <script>
+    var n1 = Number.parseFloat(window.prompt('digite um numero'))
+    var n2 = Number.parseFloat(window.prompt('digite outro número'))
+    var n3 = n1 + n2
+    /*window.alert('soma é ' + n3) assim concatena*/
+    window.alert(`A soma entre ${n1} e ${n2} é ${n3}`) //assim é mais limpo
+
+    </script>
+</body>
+</html>
