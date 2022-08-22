@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde você mora</title>
+</head>
+<body>
+    <h1>Checando nacionalidade da pessoa</h1>
+    <h2>Onde você mora?</h2>
+    <input type="text" name="nacionalidade" id="txtnac">
+    <input type="button" value="Verificar" onclick="check()">
+    <div id="nac">
+
+    </div>
+<script>
+    function check(){
+        var nacio = document.getElementById('txtnac')
+        var nac = document.querySelector('div#nac') 
+        nac.innerHTML = `Você mora em ${nacio}`
+        if (nacio == 'Brasil'){
+            nac.innerHTML += '<p>Brasileiro</p>' 
+        }
+        else {
+            nac.innerHTML += '<p>Estrangeiro</p>'
+        }
+    }
+</script>
+</body>
+</html>
